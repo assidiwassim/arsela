@@ -1,0 +1,136 @@
+
+/*********************************************************/ 
+/****************** General CSS Style ********************/ 
+/*********************************************************/ 
+
+.appContainer{
+    width: 100%;
+}
+
+.toolBarContainer {
+    height: 88vh;
+    width: 80px;
+    position: fixed;
+    z-index: 1;
+    top: 66px;
+    left: 0;
+    background-color: #fff;
+    padding: 15px;
+    overflow-x: hidden;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    text-align: center;
+ }
+
+
+.toolBarContainer label{
+ font-weight: 600;
+}
+
+.toolBarContainer .task{
+  margin-top: 10px;
+  cursor:grab;
+  animation: fadeIn .7s;
+}
+
+.toolBarContainer .task:active{
+  cursor: -webkit-grabbing;
+  cursor:    -moz-grabbing;
+  cursor:         grabbing;
+}
+
+ .WorkingSpaceContainer {
+    margin-left: 80px; 
+    min-height: 90vh;
+    padding: 10px;
+ }
+
+ .WorkingSpaceContainer .page{
+  margin-top: 10px;
+  cursor:grab;
+  position: relative;
+  animation: fadeIn .7s;
+}
+
+.WorkingSpaceContainer .page:active{
+  cursor: -webkit-grabbing;
+  cursor:    -moz-grabbing;
+  cursor:         grabbing;
+}
+
+.WorkingSpaceContainer .page .page-title{
+  position: absolute;
+  bottom: -23px;
+  width: 150px;
+  text-align: center;
+}
+
+ .WorkingSpaceNav{
+   width: 100%;
+   padding: 10px;
+   background-color: #fff;
+   position: relative;
+   height: 50px;
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+ }
+ 
+ .WorkingSpaceNav .btn {
+   margin-right: 10px;
+ }
+
+.WorkingSpaceNav .saveProcess{
+  position: absolute;
+  right:0;
+}
+
+/*********************************************************/ 
+/****************** Customize navbar bootstrap **********************/ 
+/*********************************************************/ 
+
+.navbar-custom{
+  box-shadow: rgb(99 99 99 / 20%) 35px 9px 19px 6px
+}
+.btn-start-process{
+  font-weight: 400 !important;
+  border: 1px solid #fff !important;
+  padding: 3px 25px !important;
+}
+/*********************************************************/ 
+/****************** CSS Animation **********************/ 
+/*********************************************************/ 
+
+@keyframes fadeIn {
+  0% {opacity:.3;}
+  100% {opacity:1;}
+}
+
+/*********************************************************/ 
+/****************** CSS FontAwsome **********************/ 
+/*********************************************************/ 
+.fontawsome-icon{
+  width: 200px;
+}
+
+
+/*********************************************************/ 
+/****************** CSS Scrollbar **********************/ 
+/*********************************************************/ 
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(209, 204, 204, 0.911); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
